@@ -242,9 +242,11 @@ if __name__ == "__main__":
     driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
     # Dataset root — expects sibling folder "sap-o2c-data" next to this script
-    base_data_dir = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "sap-o2c-data")
-    )
+    # base_data_dir = os.path.abspath(
+    #     os.path.join(os.path.dirname(__file__), "..", "sap-o2c-data")
+    # )
+
+    base_data_dir = "/app/sap-o2c-data"
 
     print(f"Dataset root: {base_data_dir}\n")
 
