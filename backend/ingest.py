@@ -259,9 +259,9 @@ if __name__ == "__main__":
 
         print("=== Phase 2: Transactional Nodes + Initial Relationships ===")
         process_directory(driver, base_data_dir, "sales_order_headers",      ingest_sales_orders)
-        process_directory(driver, base_data_dir, "delivery_headers",         ingest_deliveries)
+        process_directory(driver, base_data_dir, "outbound_delivery_headers",         ingest_deliveries)
         process_directory(driver, base_data_dir, "billing_document_headers", ingest_billing_documents)
-        process_directory(driver, base_data_dir, "journal_entries",          ingest_journal_entries)
+        process_directory(driver, base_data_dir, "journal_entry_items_accounts_receivable",          ingest_journal_entries)
 
         print("=== Phase 3: Item-Level Relationships ===")
         process_directory(driver, base_data_dir, "sales_order_items",      ingest_sales_order_items)
